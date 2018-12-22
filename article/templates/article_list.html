@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Article List</title>
+    <script src="https://cdn.plot.ly/plotly-latest.min.js"></script>
+
+<body>
+    {% for draw_div in data %}
+    <div>
+        <div style="width:400px">
+            {{ draw_div| safe }}
+        </div>
+    </div>
+    {% endfor %}
+</body>
